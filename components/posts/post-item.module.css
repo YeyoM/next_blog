@@ -7,6 +7,11 @@
 
 .post a {
   color: var(--color-whiteish);
+  transition: all 0.3s;
+}
+
+.post a:hover {
+  color: var(--color-orange);
 }
 
 .image {

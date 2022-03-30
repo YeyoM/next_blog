@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  cursor: url('../public/hand_isometric.svg'), auto;
+  scroll-behavior: smooth;
 }
 
 body {
