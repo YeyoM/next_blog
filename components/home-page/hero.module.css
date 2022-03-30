@@ -2,10 +2,11 @@
   text-align: center;
   background-image: linear-gradient(
     to bottom,
-    var(--color-grey-900),
-    var(--color-grey-800)
+    var(--color-whiteish),
+    var(--color-whiteish)
   );
   padding: var(--size-8) 0;
+  border-bottom: 2px solid var(--color-orange);
 }
 
 .image {
@@ -14,8 +15,9 @@
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   overflow: hidden;
-  background-color: var(--color-grey-700);
+  background-color: var(--color-blackish);
   margin: auto;
+  border: 2px solid var(--color-blackish);
 }
 
 .image img {
@@ -28,12 +30,12 @@
 .hero h1 {
   font-size: var(--size-16);
   margin: var(--size-4) 0;
-  color: var(--color-grey-300);
+  color: var(--color-blackish);
 }
 
 .hero p {
   font-size: var(--size-6);
-  color: var(--color-grey-200);
+  color: var(--color-blackish);
   width: 90%;
   max-width: 40rem;
   margin: auto;

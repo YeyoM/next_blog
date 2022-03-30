@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Asset&family=Notable&family=Space+Grotesk:wght@400;700&family=Stint+Ultra+Expanded&display=swap');
 
 * {
   box-sizing: border-box;
@@ -15,6 +15,11 @@ body {
   --color-grey-700: hsl(265, 4%, 31%);
   --color-grey-800: hsl(276, 5%, 20%);
   --color-grey-900: hsl(280, 5%, 13%);
+
+  --color-blackish: rgb(36, 36, 36);
+  --color-whiteish: #d8d8d8da;
+
+  --color-orange: rgb(255, 94, 0);
 
   --color-primary-50: #c8b3ce;
   --color-primary-100: #a07aaa;
@@ -45,13 +50,14 @@ body {
   margin: 0;
   background-color: var(--color-grey-500);
   color: #252525;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cousine', monospace;
+
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Oswald', 'Roboto', sans-serif;
+  font-family: 'Cousine', monospace;
 }
 
 a {
@@ -61,4 +67,8 @@ a {
 button {
   font: inherit;
   cursor: pointer;
+}
+
+::selection { 
+  background-color: rgb(255, 94, 0);
 }

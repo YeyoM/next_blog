@@ -1,17 +1,19 @@
 .post {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  background-color: var(--color-grey-800);
+  background-color: var(--color-blackish);
   text-align: center;
+  border: 1px solid var(--color-whiteish);
 }
 
 .post a {
-  color: var(--color-grey-100);
+  color: var(--color-whiteish);
 }
 
 .image {
   width: 100%;
   max-height: 20rem;
   overflow: hidden;
+  border-bottom: 2px solid var(--color-orange);
 }
 
 .image img {
@@ -29,7 +31,7 @@
 
 .content time {
   font-style: italic;
-  color: var(--color-grey-300);
+  color: var(--color-orange);
 }
 
 .content p {
