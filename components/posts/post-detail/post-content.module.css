@@ -7,9 +7,6 @@
   background-color: var(--color-grey-100);
   border-radius: 6px;
   padding: var(--size-4);
-}
-
-.content p {
   color: var(--color-blackish);
 }
 

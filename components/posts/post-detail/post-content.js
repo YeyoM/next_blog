@@ -1,5 +1,6 @@
 import PostHeader from "./post-header"
 import classes from "./post-content.module.css"
+import ReactMarkdown from "react-markdown"
 
 const DUMMY_POST = {
   slug: 'getting-started-with-next-js',
@@ -16,7 +17,7 @@ export default function PostContent() {
   return (
     <article className={classes.content}>
       <PostHeader title={DUMMY_POST.title} image={imagePath}/>
-      <p>{DUMMY_POST.content}</p>
+      <ReactMarkdown>{DUMMY_POST.content}</ReactMarkdown>
     </article>
   )
 }
