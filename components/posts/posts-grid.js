@@ -4,7 +4,6 @@ import classes from './posts-grid.module.css'
 export default function PostsGrid(props) {
   
   const { posts } = props
-  console.log(posts[0].slug)
 
   return (
     <ul className={classes.grid}>
