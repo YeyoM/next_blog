@@ -50,10 +50,9 @@ body {
   --size-40: 10rem;
 
   margin: 0;
-  background-color: var(--color-grey-500);
+  background-color: var(--color-blackish);
   color: #252525;
   font-family: 'Cousine', monospace;
-
 }
 
 h1,
