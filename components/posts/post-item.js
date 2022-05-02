@@ -1,22 +1,22 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import React from 'react'
 
 import classes from './post-item.module.css'
 
-export default function PostItem(props) {
-
-  const { 
-    title, 
-    image, 
-    excerpt, 
-    date, 
-    slug 
+export default function PostItem (props) {
+  const {
+    title,
+    image,
+    excerpt,
+    date,
+    slug
   } = props.post
 
   const formattedDate = new Date(date).toLocaleDateString('en-US', {
     day: 'numeric',
     month: 'long',
-    year: 'numeric',
+    year: 'numeric'
   })
 
   const imagePath = `/images/posts/${slug}/${image}`
@@ -26,10 +26,10 @@ export default function PostItem(props) {
       <Link href={`/posts/${slug}`}>
         <a>
           <div className={classes.image}>
-            <Image 
-              src={imagePath} 
-              alt={title} 
-              width={300} 
+            <Image
+              src={imagePath}
+              alt={title}
+              width={300}
               height={200}
               layout='responsive'
             />

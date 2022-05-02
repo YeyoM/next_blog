@@ -1,13 +1,14 @@
 import Image from 'next/image'
 import classes from './hero.module.css'
+import React from 'react'
 
-export default function Hero() {
+export default function Hero () {
   return (
     <section className={classes.hero}>
-      <div className={classes.image}> 
-        <Image 
-          src="/images/site/diego2.jpeg" 
-          alt="An image showing Diego" 
+      <div className={classes.image}>
+        <Image
+          src="/images/site/diego2.jpeg"
+          alt="An image showing Diego"
           width={300}
           height={300}
         />

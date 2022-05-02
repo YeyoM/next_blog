@@ -1,7 +1,8 @@
 import classes from './all-posts.module.css'
 import PostsGrid from './posts-grid'
+import React from 'react'
 
-export default function AllPosts(props) {
+export default function AllPosts (props) {
   return (
     <section className={classes.posts}>
       <h1>All Posts</h1>

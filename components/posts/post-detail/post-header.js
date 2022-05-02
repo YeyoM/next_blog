@@ -1,8 +1,7 @@
-import Image from "next/image"
-import classes from "./post-header.module.css"
+import classes from './post-header.module.css'
+import React from 'react'
 
-export default function PostHeader(props) {
-
+export default function PostHeader (props) {
   const { title } = props
 
   return (

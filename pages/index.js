@@ -1,11 +1,11 @@
-import { Fragment } from 'react'
+import React, { Fragment } from 'react'
 
 import Hero from '../components/home-page/hero'
 import FeaturedPosts from '../components/home-page/featured-posts'
 
 import { getFeaturedPosts } from '../lib/posts-util'
 
-export default function HomePage(props) {
+export default function HomePage (props) {
   return (
     <Fragment>
       <Hero />
@@ -14,7 +14,7 @@ export default function HomePage(props) {
   )
 }
 
-export function getStaticProps() {
+export function getStaticProps () {
   const featuredPosts = getFeaturedPosts()
   return {
     props: {

@@ -1,9 +1,10 @@
 import Link from 'next/link'
 import Logo from './logo'
+import React from 'react'
 
 import classes from './main-navigation.module.css'
 
-export default function MainNavigation() {
+export default function MainNavigation () {
   return (
     <header className={classes.header}>
       <Link href='/'>
