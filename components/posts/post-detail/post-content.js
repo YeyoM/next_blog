@@ -1,6 +1,6 @@
-import PostHeader from "./post-header"
-import classes from "./post-content.module.css"
-import ReactMarkdown from "react-markdown"
+import PostHeader from './post-header'
+import classes from './post-content.module.css'
+import ReactMarkdown from 'react-markdown'
 import Image from 'next/image'
 import { Prism as SyntaxHighLighter } from 'react-syntax-highlighter'
 import { atomDark } from 'react-syntax-highlighter/dist/cjs/styles/prism'
@@ -44,8 +44,12 @@ export default function PostContent(props) {
 
   return (
     <article className={classes.content}>
-      <PostHeader title={post.title}/>
-      <ReactMarkdown components={customRenderers}>{post.content}</ReactMarkdown>
+      <PostHeader 
+        title={post.title}
+      />
+      <ReactMarkdown components={customRenderers}>
+        {post.content}
+      </ReactMarkdown>
     </article>
   )
 }

@@ -5,7 +5,13 @@ import classes from './post-item.module.css'
 
 export default function PostItem(props) {
 
-  const { title, image, excerpt, date, slug } = props.post
+  const { 
+    title, 
+    image, 
+    excerpt, 
+    date, 
+    slug 
+  } = props.post
 
   const formattedDate = new Date(date).toLocaleDateString('en-US', {
     day: 'numeric',
