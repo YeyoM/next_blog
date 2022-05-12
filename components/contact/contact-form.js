@@ -20,6 +20,9 @@ export default function ContactForm () {
 
   function sendMessage (e) {
     e.preventDefault()
+
+    // verificar que los datos esten completos aquiiiiii
+
     fetch('/api/contact', {
       method: 'POST',
       headers: {
