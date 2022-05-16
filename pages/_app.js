@@ -4,13 +4,11 @@ import React from 'react'
 import Head from 'next/head'
 
 function MyApp ({ Component, pageProps }) {
-  const title = 'Diego\'s Blog'
-
   return (
     <Layout>
       <Head>
-        <title>{title}</title>
         <link rel="icon" href="/d.svg" />
+        <meta name='viewport' content='width=device-width, initial-scale=1'/>
       </Head>
       <Component {...pageProps} />
     </Layout>
