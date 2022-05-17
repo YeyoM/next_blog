@@ -42,10 +42,12 @@ Como ya lo dijimos, un árbol es una estructura que se puede definir por medio d
 
 ### Recorrido de un arbol
 
+~~~
 1. Recorrido Preorden
    - Raiz
    - Subarbol izquierdo en preorden
    - Subarbol derecho en preorden
+
 2. Recorrido Postorden
    - Subarbol izquierdo en orden final
    - Subarbol derecho en orden final
@@ -54,6 +56,7 @@ Como ya lo dijimos, un árbol es una estructura que se puede definir por medio d
    - Subarbol izquierdo 
    - Raiz
    - Subarbol derecho
+~~~
 
 ### Arbol binario de busqueda
 
@@ -94,7 +97,6 @@ Para buscar un elemento de un árbol, se pueden dar varios casos:
 3. En caso contrario, verificar si el elemento está en el subárbol derecho (si n > R)
 
 ```cpp
-
 bool buscar(Nodo *nodo, int dato_a_buscar) {
   if (nodo == NULL) {
     return false;
@@ -110,7 +112,6 @@ bool buscar(Nodo *nodo, int dato_a_buscar) {
   // CASO 3: Si el elemento está en el subárbol derecho
   return buscar(nodo -> der, dato_a_buscar);
 }
-
 ```
 
 #### Añadir un elemento a un árbol
@@ -125,7 +126,6 @@ Al añadir un elemento a un árbol, se pueden dar varios casos:
 4. Si la raiz del árbol es menor al elemento a añadir, se añade el elemento en el subárbol derecho
    
 ```cpp
-
 void insertar(Nodo *&raiz, int dato) {
   if (raiz == NULL) {
     Nodo *nuevo_nodo = new Nodo();
@@ -140,8 +140,8 @@ void insertar(Nodo *&raiz, int dato) {
     insertar(raiz -> der, dato);
   }
 }
-
 ```
+___
 
 ### Ordenación de las estructuras de datos
 
@@ -152,11 +152,12 @@ La ordenación externa es aquella en al que los elementos se encuentran en archi
 - Pueden ser clasificados en metodos directos(cortos y de facil elaboración y compresión) y logaritmicos(son más complejos pero requeren menos comparaciones y movimientos para ordenar elementos)
 
 - Clasificación de los algoritmos de Ordenamiento
-  
+~~~
 1. Algoritmos de Inserción
 2. Algoritmos de Intercambio
 3. Algoritmos de Selección
 4. Algoritmos de Enumeración
+~~~
 
 #### Método de ordenación de burbuja
 
