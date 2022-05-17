@@ -10,6 +10,8 @@ isFeatured: true
 Dentro de los lineales podemos encontrar estructuras de datos que mantienen una relacion entre ellos y sus elementos.
 Ahora, dentro de los jerarquicos podemos encontrar estructuras de datos en las que se presentan una jerarquia entre conjuntos de datos.
 
+***
+
 ### Arboles
 
 Es una estructura de datos en la que los datos se organizan de modo que los elementos deinformacion estan relacionados entre si a traves de ramas
@@ -162,20 +164,31 @@ Se basa en una serie de intercambios entre elementos adyacentes. Estos intercamb
 
 El algoritmo se analiza de la siguiente forma:
 
-- Supongamos que tenemos el siguiente arreglo: [4, 5, 2, 1, 3]
+- Supongamos que tenemos el siguiente arreglo: 
+   - [4, 5, 2, 1, 3]
   
-1. Empezamos comparando el elemento de la posición 0 con el elemento de la posición 1: 4 vs 5, como están en orden continuamos -> [4, 5, 2, 1, 3]
-2. Comparamos el elemento de la posición 1 con el elemento de la posición 2: 5 vs 2, como no están en orden, intercambiamos los elementos -> [4, 2, 5, 1, 3]
-3. Comparamos el elemento de la posición 2 con el elemento de la posición 3: 5 vs 1, como no están en orden, intercambiamos los elementos -> [4, 2, 1, 5, 3]
-4. Comparamos el elemento de la posición 3 con el elemento de la posición 4: 5 vs 3, como no están en orden, intercambiamos los elementos -> [4, 2, 1, 3, 5]
+1. Empezamos comparando el elemento de la posición 0 con el elemento de la posición 1: 4 vs 5, como están en orden continuamos 
+   - [4, 5, 2, 1, 3]
+2. Comparamos el elemento de la posición 1 con el elemento de la posición 2: 5 vs 2, como no están en orden, intercambiamos los elementos 
+   - [4, 2, 5, 1, 3]
+3. Comparamos el elemento de la posición 2 con el elemento de la posición 3: 5 vs 1, como no están en orden, intercambiamos los elementos 
+   - [4, 2, 1, 5, 3]
+4. Comparamos el elemento de la posición 3 con el elemento de la posición 4: 5 vs 3, como no están en orden, intercambiamos los elementos 
+   - [4, 2, 1, 3, 5]
    - Aqui el elemento en la posicion 4 ya está en su posición final. Continuamos con los demas elementos.
-5. Comparamos el elemento de la posicion 0 con el elemento de la posicion 1: 4 vs 2, como no están en orden, intercambiamos los elementos -> [2, 4, 1, 3, 5]
-6. Comparamos el elemento de la posicion 1 con el elemento de la posicion 2: 4 vs 1, como no están en orden, intercambiamos los elementos -> [2, 1, 4, 3, 5]
-7. Comparamos el elemento de la posicion 2 con el elemento de la posicion 3: 4 vs 3, como no están en orden, intercambiamos los elementos -> [2, 1, 3, 4, 5]
+5. Comparamos el elemento de la posicion 0 con el elemento de la posicion 1: 4 vs 2, como no están en orden, intercambiamos los elementos 
+   - [2, 4, 1, 3, 5]
+6. Comparamos el elemento de la posicion 1 con el elemento de la posicion 2: 4 vs 1, como no están en orden, intercambiamos los elementos 
+   - [2, 1, 4, 3, 5]
+7. Comparamos el elemento de la posicion 2 con el elemento de la posicion 3: 4 vs 3, como no están en orden, intercambiamos los elementos 
+   - [2, 1, 3, 4, 5]
    - Aqui el elemento en la posicion 3 ya está en su posición final. Continuamos con los demas elementos.
-8. Comparamos el elemento de la posicion 0 con el elemento de la posicion 1: 2 vs 1, como no están en orden, intercambiamos los elementos -> [1, 2, 4, 3, 5]
-9. Comparamos el elemento de la posicion 1 con el elemento de la posicion 2: 2 vs 4, como están en orden, continuamos -> [1, 2, 4, 3, 5]
-10. Comparamos el elemento de la posicion 2 con el elemento de la posicion 3: 4 vs 3, como no están en orden, intercambiamos los elementos -> [1, 2, 3, 4, 5]
+8. Comparamos el elemento de la posicion 0 con el elemento de la posicion 1: 2 vs 1, como no están en orden, intercambiamos los elementos 
+   - [1, 2, 4, 3, 5]
+9.  Comparamos el elemento de la posicion 1 con el elemento de la posicion 2: 2 vs 4, como están en orden, continuamos 
+    - [1, 2, 4, 3, 5]
+10. Comparamos el elemento de la posicion 2 con el elemento de la posicion 3: 4 vs 3, como no están en orden, intercambiamos los elementos 
+    - [1, 2, 3, 4, 5]
     - Aquí el arreglo ya está ordenado.
 
 El código se ve de la siguiente manera:
